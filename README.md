@@ -42,7 +42,7 @@ java -cp target/aws-s3-sync-jar-with-dependencies.jar [options]
 ### Sample run
 
 ```
-java -cp target/aws-s3-sync-jar-with-dependencies.jar --auth src/test/resources/auth1.properties --region AP_EAST_1 --bucket my-bucket --path src/test/resources/sample.txt --target /test/123/
+java -cp target/aws-s3-sync-jar-with-dependencies.jar --auth src/test/resources/auth1.properties --region AP_EAST_1 --bucket my-bucket --path src/test/resources/sample.txt --target test/123/
 ```
 
 ## Options

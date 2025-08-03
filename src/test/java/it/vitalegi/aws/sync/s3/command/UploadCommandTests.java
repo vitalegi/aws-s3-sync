@@ -19,7 +19,7 @@ public class UploadCommandTests {
     void commandIsCreated() {
         var path = Path.of("./src/test/resources/sample.txt");
         var uploadCommand = UploadCommand.builder() //
-                .target("/test/123/") //
+                .target("test/123/") //
                 .region(Region.AP_EAST_1) //
                 .bucket("bucket1") //
                 .path(path) //
@@ -30,6 +30,6 @@ public class UploadCommandTests {
 
         uploadCommand.execute();
 
-        verify(s3, times(1)).uploadObject("bucket1", "/test/123/sample.txt", path);
+        verify(s3, times(1)).uploadObject("bucket1", "test/123/sample.txt", path);
     }
 }

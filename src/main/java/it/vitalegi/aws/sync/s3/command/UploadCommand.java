@@ -31,9 +31,6 @@ public class UploadCommand implements Command {
     }
 
     String targetKey() {
-        if (!target.startsWith("/")) {
-            throw new IllegalArgumentException("Invalid target path, must start with /");
-        }
         if (!target.endsWith("/")) {
             throw new IllegalArgumentException("Invalid target path, must end with /");
         }
