@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>it.vitalegi</groupId>
     <artifactId>aws-s3-sync</artifactId>
-    <version>0.0.4</version>
+    <version>0.0.5</version>
     <name>aws-s3-sync</name>
     <description>AWS S3 Sync</description>
     <url/>
