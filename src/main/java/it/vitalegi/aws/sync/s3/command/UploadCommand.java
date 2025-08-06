@@ -25,19 +25,7 @@ public class UploadCommand implements Command {
     @Override
     public void execute() {
         log.info("Region {}, bucket {}", region, bucket);
-        var targetKey = targetKey();
-        log.info("Upload {} to {}", path, targetKey);
-        s3.uploadObject(bucket, targetKey, path);
-    }
-
-    String targetKey() {
-        if (!target.endsWith("/")) {
-            throw new IllegalArgumentException("Invalid target path, must end with \"/\", actual: \"" + target + "\"");
-        }
-        return target + getFilename(path);
-    }
-
-    String getFilename(Path path) {
-        return path.getFileName().toString();
+        log.info("Upload {} to {}", path, target);
+        s3.uploadObject(bucket, target, path);
     }
 }
