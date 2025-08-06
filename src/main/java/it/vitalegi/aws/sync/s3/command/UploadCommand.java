@@ -32,7 +32,7 @@ public class UploadCommand implements Command {
 
     String targetKey() {
         if (!target.endsWith("/")) {
-            throw new IllegalArgumentException("Invalid target path, must end with /");
+            throw new IllegalArgumentException("Invalid target path, must end with \"/\", actual: \"" + target + "\"");
         }
         return target + getFilename(path);
     }
