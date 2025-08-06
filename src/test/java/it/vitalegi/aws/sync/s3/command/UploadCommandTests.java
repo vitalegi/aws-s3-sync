@@ -19,7 +19,7 @@ public class UploadCommandTests {
     void commandIsCreated() {
         var path = Path.of("./src/test/resources/sample.txt");
         var uploadCommand = UploadCommand.builder() //
-                .target("test/123/sample.txt") //
+                .target("test/123/") //
                 .region(Region.AP_EAST_1) //
                 .bucket("bucket1") //
                 .path(path) //
