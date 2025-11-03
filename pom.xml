@@ -24,7 +24,7 @@
         <java.version>17</java.version>
         <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.version>5.13.4</junit.version>
+        <junit.version>6.0.1</junit.version>
         <lombok.version>1.18.42</lombok.version>
         <amazon.version>2.36.2</amazon.version>
         <testcontainers.version>1.20.6</testcontainers.version>
